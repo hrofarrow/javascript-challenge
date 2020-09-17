@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: Ubuntu, sans-serif;
+  font-family: "Audiowide", cursive;
 }
 
 html,
@@ -25,7 +25,7 @@ body {
   bottom: 0;
   left: 0;
   min-height: 100px;
-  background: #4e5d6c;
+  background: #444444;
 }
 
 /* The code styles the text at the bottom of the footer */
@@ -35,7 +35,7 @@ body {
   bottom: 0;
   left: 0;
   padding: 5px;
-  background: #1b3146;
+  background: #cc5500;
 }
 
 .navbar {
@@ -43,11 +43,16 @@ body {
   margin: 0;
 }
 
+.navbar-brand {
+  font-size: 16px;
+  color: white;
+}
+
 /* This CSS styles the ufo icon in the navbar */
 .nav-ufo {
   position: absolute;
   bottom: 5px;
-  left: 150px;
+  left: 175px;
   width: 35px;
   color: white;
 }
@@ -83,12 +88,28 @@ select {
   min-width: 70px;
 }
 
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #444444;
+}
+
 .loader {
   margin-top: 50px;
 }
 
 .margin-top-50 {
   margin-top: 50px;
+}
+
+.container {
+  background-color: #a9a9a9;
+}
+
+.row.margin-top-50 {
+  background-color: #a9a9a9;
+}
+
+.wrapper {
+  background-color: #a9a9a9;
 }
 
 /* The styles for the parallax */
@@ -98,9 +119,9 @@ select {
   padding: 20px;
   margin: 0;
   background: black;
-  background-image: url("../images/nasa.jpg");
+  background-image: url("../images/moon.jpg");
   background-attachment: fixed;
-  background-position: bottom center;
+  background-position: left;
   background-size: cover;
 }
 
@@ -108,6 +129,7 @@ select {
   margin-top: 200px;
   font-size: 0.1rem;
   animation: title 1.2s forwards linear;
+  font-weight: bold;
 }
 
 .hero p {
@@ -115,8 +137,18 @@ select {
   opacity: 0;
   animation: subtitle 1.2s forwards linear;
   animation-delay: 1.2s;
+  font-weight: bold;
+  color: #cc5500;
+  text-shadow: 2px 2px #444444;
 }
 
+.intro {
+  background-color: #cc5500;
+  text-align: center;
+  line-height: 2;
+  padding: 10px;
+  position: relative;
+}
 /* input placeholder color changes */
 .form-control::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
@@ -153,7 +185,7 @@ select {
   #table-area tr td:first-child {
     font-size: 1.8em;
     font-weight: bold;
-    background: #1b3146;
+    background: #cc5500;
   }
 
   #table-area tr td:last-child {
