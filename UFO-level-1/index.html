@@ -49,7 +49,8 @@
                     <ul class="list-group" id="filters">
                       <li class="filter list-group-item" style="background-color: #444444">
                         <label for="date">Enter a Date</label>
-                        <input class="form-control" id="datetime" type="text" placeholder="1/11/2011">
+                        <input class="form-control" id="datetime" type="text" placeholder="1/11/2011"
+                          onSubmit="changeHandler">
                       </li>
                     </ul>
                   </div>
@@ -66,7 +67,7 @@
             <table id="ufo-table" class="table table-striped bg-secondary">
               <thead>
                 <tr>
-                  <th class=" table-head">Date</th>
+                  <th class="table-head">Date</th>
                   <th class="table-head">City</th>
                   <th class="table-head">State</th>
                   <th class="table-head">Country</th>
@@ -75,7 +76,7 @@
                   <th class="table-head">Comments</th>
                 </tr>
               </thead>
-              <tbody></tbody>
+              <!-- <tbody></tbody> -->
             </table>
           </div>
         </div>
